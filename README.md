@@ -61,6 +61,14 @@ This is a deliberate trade-off: class weighting favors catching more true leaver
 
 **Follow-up on DistanceFromHome:** a genuinely new finding — attrition climbs roughly linearly from 13.8% (under 5 miles) to 22.1% (20-30 miles), confirming the model's coefficient direction.
 
+## Dashboard
+Built in Tableau Public — combines the two strongest findings into one view.
+
+- **Attrition by Department & Overtime**: grid showing the overtime effect is consistent across all three departments (Sales 13.8%→37.5%, HR 15.2%→29.4%, R&D 8.6%→27.3%)
+- **Attrition by Job Level**: bar chart confirming the entry-level spike — Level 1 at 26.3% attrition, dropping sharply and staying low through Levels 2-5 (4.7-14.7%)
+
+[Live dashboard link](https://public.tableau.com/views/Tableau_hr_attrition/HRAttritionDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 ## What I found
 Overtime is the strongest and most consistent attrition driver in this dataset, holding across every department. Age is the strongest independent predictor overall, with younger/early-career employees at meaningfully higher risk — and this risk is concentrated specifically at entry-level (Level 1), not spread evenly across seniority. Job satisfaction and work-life balance both matter but less than overtime. The commonly assumed "pay drives attrition" story is mostly a seniority artifact — controlling for job level nearly erases the raw income gap. Distance from home is a new, real finding that wasn't part of the original hypothesis set.
 
